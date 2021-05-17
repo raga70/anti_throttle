@@ -1,0 +1,12 @@
+[Unit]
+Description= anti_throttle
+
+[Service]
+
+ExecStart=ExecStart=/usr/bin/anti_throttle/y1.sh
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
+Alias=script.service
+
