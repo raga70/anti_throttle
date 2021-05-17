@@ -3,7 +3,7 @@ Description= anti_throttle
 
 [Service]
 
-ExecStart=ExecStart=/usr/bin/anti_throttle/y1.sh
+ExecStart=/usr/bin/anti_throttle/y1.sh
 StandardOutput=null
 
 [Install]
