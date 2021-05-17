@@ -1,4 +1,4 @@
-#DESCRIPTION
+#DESCRIPTION <br>
 this app disables any kind of throttling applied on intel processor laptops 
 and unlocks full power without turbo boost on battery
 its all neatly developed in a system tray menu with 2 simple options on and off
@@ -25,7 +25,7 @@ the app is intended to be used as follows bdprochot_on when plugged in and bdpro
 
 
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 
 
@@ -102,7 +102,7 @@ echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo
 
 
 
-
+<br><br><br><br><br>
 
 
 
