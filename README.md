@@ -16,6 +16,19 @@ the app is intended to be used as follows bdprochot_on when plugged in and bdpro
 ![Screenshot](screenshot.png)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 #INSTALLATION
 
 step 1:
@@ -80,7 +93,27 @@ echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo
 ```
 
 
-#how it works
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#HOW IT WORKS
 
 my package gives you the option to turn off "bi-directional prochot" which allows the CPU to ignore all motherboard throttling instructions.
 In the process of doing so the system may become unstable, that’s why my app disables turbo boost when BdProchot is off.
