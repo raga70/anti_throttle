@@ -67,7 +67,7 @@ sudo systemctl status shellscript.service
 
 the installation procees copys the app to /usr/bin and meke`s it a service 
 
-
+<br> <br>
 step 2 - if it works, step 2 is optional :
 
 install performance-tweaks package from the Chaotic AUR repository https://archlinux.pkgs.org/rolling/chaotic-aur-x86_64/performance-tweaks-1.0.1-1-any.pkg.tar.zst.html  
