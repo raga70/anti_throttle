@@ -1,11 +1,11 @@
 [Unit]
 
 Description=Anti Throttle
-
+After=syslog.target network.target multi-user.target nodm.service
 [Service]
 
 Restart=always
-
+RestartSec=20
 Type=simple
 
 ExecStart=yad --notification --text="bdProchot" --title="bdProchot" --tooltip="bdProchot" --image="/usr/bin/anti_throttle/logo.png" --command=menu --menu="bdProchot-ON!bash /usr/bin/anti_throttle/bdprochot_on.sh && echo 0 > /sys/devices/system/cpu/intel_pstate/no_turbo!/usr/bin/anti_throttle/bdon.png|bdProchot-OFF!bash /usr/bin/anti_throttle/bdprochot_off.sh && echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo!/usr/bin/anti_throttle/bdoff.png"
