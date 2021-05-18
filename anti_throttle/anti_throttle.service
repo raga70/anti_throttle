@@ -1,7 +1,7 @@
 [Unit]
 
 Description=Anti Throttle
-After=syslog.target network.target multi-user.target nodm.service
+After=syslog.target multi-user.target nodm.service
 [Service]
 
 Restart=always
