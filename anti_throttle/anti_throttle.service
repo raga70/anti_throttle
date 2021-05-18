@@ -1,12 +1,19 @@
 [Unit]
-Description= anti_throttle
+
+Description=Anti Throttle
 
 [Service]
 
-ExecStart=/usr/bin/anti_throttle/y1.sh
-StandardOutput=null
+Restart=always
+
+Type=simple
+
+ExecStart=yad --notification --text="bdProchot" --title="bdProchot" --tooltip="bdProchot" --image="/usr/bin/anti_throttle/logo.png" --command=menu --menu="bdProchot-ON!bash /usr/bin/anti_throttle/bdprochot_on.sh && echo 0 > /sys/devices/system/cpu/intel_pstate/no_turbo!/usr/bin/anti_throttle/bdon.png|bdProchot-OFF!bash /usr/bin/anti_throttle/bdprochot_off.sh && echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo!/usr/bin/anti_throttle/bdoff.png"
+
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/raga70/.Xauthority"
+User=root
 
 [Install]
-WantedBy=multi-user.target
-Alias=script.service
 
+WantedBy=graphical.target
